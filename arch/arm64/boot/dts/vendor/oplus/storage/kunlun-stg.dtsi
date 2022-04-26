@@ -1,0 +1,14 @@
+&sdhc_1 {
+//#ifdef OPLUS_FEATURE_EMMC_DRIVER
+//jason.wu@BSP.Storage.UFS 2020-8-12 kunlun project has no emmc
+        status = "disabled";
+//#endif
+};
+
+&sdhc_2 {
+//#ifdef OPLUS_FEATURE_EMMC_DRIVER
+//jason.wu@BSP.Storage.UFS 2020-8-12 kunlun project has no T card
+        status = "disabled";
+//#endif
+};
+

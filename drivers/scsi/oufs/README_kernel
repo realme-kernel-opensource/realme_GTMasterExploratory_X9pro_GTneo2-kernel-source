@@ -1,0 +1,1113 @@
+commit 0777ecf0feb3824399272cd302312a26a8f9b05f
+Author: zhangfei12 <zhangfei12@oppo.com>
+Date:   Tue Mar 31 22:38:42 2020 +0800
+
+    [8250R][BSP.Kernel.Stability][2/2][BugId:无][无风险][无依赖][自然集成]{添加关机异常检测shutdown detect功能}
+    
+    分析：{添加关机异常检测shutdown detect功能}
+    方案：{检测到关机发生异常后保存异常log并且重启或关机进行恢复}
+    风险及影响[快/稳/省/功能]：{稳}
+    测试建议：{能正常开机,/proc目录下有shutdown_detect节点，输入特定的值以后会触发对应的监控机制}
+    跨组依赖(提交链接)：{无}
+    移植适用范围：{无}
+    
+    Change-Id: Idad3c75492efdd350acccfbbb6fb55a6965b0d5e
+
+commit 423b77d465924264862c0787682ac0510d53e4ec
+Author: amos.xu <amos.xu@oppo.com>
+Date:   Mon Mar 30 22:43:22 2020 +0800
+
+    [8250R][PSW.BSP.Security][1/1][BugID:无][无风险][无依赖][自然集成]{加入指纹的驱动和配置文件}
+    
+    分析：{加入指纹的驱动和配置文件}
+    方案：{加入指纹的驱动和配置文件}
+    风险及影响[快/稳/省/功能]：{无风险}
+    测试建议：{指纹驱动可以正确的编译和加载}
+    跨组依赖(提交链接)：{无}
+    移植适用范围：{全部项目}
+    
+    Change-Id: If7ed35f41503521b71c3f2c5339209eca779bbf6
+
+commit 136124bc1f1a95d1cb73b22f1908dda56bb58eb7
+Author: wen.luo <wen.luo@oppo.com>
+Date:   Wed Apr 1 09:05:40 2020 +0800
+
+    [All][BSP.Kernel.Stability][1/1][BugId:无][无风险][无依赖][自然集成]{修正oplus system makefile}
+    
+    分析：{修正oplus system makefile}
+    方案：{修正oplus system makefile}
+    风险及影响[快/稳/省/功能]：{无}
+    测试建议：{老化测试}
+    跨组依赖(提交链接)：{无}
+    移植适用范围：{无}
+    
+    Change-Id: I2d1bd92e0bda41295a1770dcc9e54abf2bae5254
+
+commit fe5cc2671afd2575c761d481b61f8ff07923c5c5
+Author: yaorenbing <yaorenbing@oppo.com>
+Date:   Tue Mar 31 19:05:24 2020 +0800
+
+    [8250_R][BSP.Bootloader.Bootflow][1/1][BugId:无][无风险][无依赖][自然集成]{移植TP驱动代码和checklist}
+    
+    分析：{TP checklist移植}
+    方案：{无}
+    风险及影响[快/稳/省/功能]：{无}
+    测试建议：{tp功能正常}
+    跨组依赖(提交链接)：{无}
+    移植适用范围：{无}
+    
+    Change-Id: I05f3f1875e730d000b26f4e093a78f7a893c8c16
+
+commit 3a9e710a3ccbbcf1357ba4b51ddfd71e10166960
+Author: lisheng1 <lisheng1@oppo.com>
+Date:   Mon Mar 30 15:56:51 2020 +0800
+
+    [19065][MM.Display.LCD.Stability][1/1][BugId:无][无风险][无依赖][自然集成]{源提交：开启CONFIG_DRM_MSM宏并去除旧display仓库编译}
+    
+    分析：{多个模块依赖CONFIG_DRM_MSM宏配置}
+    方案：{能配置并去除旧display仓库编译}
+    风险及影响[快/稳/省/功能]：{功能}
+    测试建议：{编译正常，开机正常}
+    跨组依赖(提交链接)：{无}
+    移植适用范围：{无}
+    
+    Change-Id: I0015f2f0e459b094a0a8b09bd9c4ed212da9a0bf
+
+commit 5fc80bef69a4ca2963e2f9c907e00a3fc9c77e27
+Merge: 8a81f37 6530985
+Author: pswbuild <pswbuild@oppo.com>
+Date:   Mon Mar 30 10:46:06 2020 +0800
+
+    Merge remote-tracking branch 'origin/psw/feature_master/upgrade/r00011.2' into r/sm8250/master
+
+commit 8a81f3789184fef9c16dd76365ab5355affd50a6
+Author: amos.xu <amos.xu@oppo.com>
+Date:   Fri Mar 27 19:12:08 2020 +0800
+
+    [8250R][PSW.BSP.Security][1/1][BugID:无][无风险][无依赖][自然集成]{移植获取secure boot状态功能和rpbm相关操作}
+    
+    分析：{移植获取secure boot状态功能和rpbm相关操作}
+    方案：{移植获取secure boot状态功能和rpbm相关操作}
+    风险及影响[快/稳/省/功能]：{无风险}
+    测试建议：{1. cat /proc/oppo_secure_common/secureSNBound
+               cat /proc/oppo_secure_common/secureType}
+    跨组依赖(提交链接)：{无}
+    移植适用范围：{全部项目}
+    
+    Change-Id: Ieaaeba748579690ab825be174cb7839a55a96c3f
+
+commit ec8295507e7165d1f2b1e4d1721bfbe70fda68c1
+Author: lijunlong2 <lijunlong2@oppo.com>
+Date:   Sun Mar 29 23:04:28 2020 +0800
+
+    [ALL][CONNECTIVITY.WIFI.INTERNET][1/1][BUGID:1197891][无风险][无依赖][自然集成]{代码移植：SLA移植}
+    
+    分析：{SLA移植}
+    方案：{SLA移植}
+    风险及影响[快/稳/省/功能]：{无}
+    测试建议：{待rom移植完成后测试SLA基本功能}
+    跨组依赖(提交链接)：{无}
+    移植适用范围：{Android R}
+
+commit 16b8dd2084e00baa9d670b2d11917def3d990d4d
+Author: asiga <asiga@oppo.com>
+Date:   Thu Mar 26 14:35:37 2020 +0800
+
+    [ALL][NETWORK.DATA][1/1][BUGID:4796][无风险][无依赖][自然集成]{提交OPLUS_FEATURE_NWPOWER}
+    
+    分析：{提交OPLUS_FEATURE_NWPOWER}
+    方案：{提交OPLUS_FEATURE_NWPOWER}
+    风险及影响[快/稳/省/功能]：{稳}
+    测试建议：{编译通过}
+    跨组依赖(提交链接)：{无}
+    移植适用范围：{【R】【8250】【OS8】【19065】}
+    
+    Change-Id: I97a6b0cc5ab659beb9570b7568547a256dea8b77
+
+commit ccc8e8c37c177bca74528009ad5c16da4b08ab75
+Author: 田 文 <tianwen@oppo.com>
+Date:   Sat Mar 28 19:25:02 2020 +0800
+
+    Revert "[All][BSP.Power.Basic][6/6][BugID:无][无风险][无依赖][自然集成]{回退：移植cdt和启动模式}"
+    
+    This reverts commit 6b9e099d93c7aeba62e96de696816ddd29978b29.
+    
+    Change-Id: I7843d8944e0313e8ac4a0e1eecc8c1933ab62011
+
+commit 6b9e099d93c7aeba62e96de696816ddd29978b29
+Author: tianwen <tianwen@oppo.com>
+Date:   Sat Mar 28 12:42:33 2020 +0800
+
+    [All][BSP.Power.Basic][6/6][BugID:无][无风险][无依赖][自然集成]{回退：移植cdt和启动模式}
+    
+    分析：{无}
+    方案：{无}
+    风险及影响[快/稳/省/功能]：{无}
+    测试建议：{手机能刷机/开机}
+    跨组依赖(提交链接)：{无}
+    移植适用范围：{无}
+
+commit 42860bedb46cc16db20e794cb40660df8e940473
+Author: wen.luo <wen.luo@oppo.com>
+Date:   Wed Mar 25 20:03:35 2020 +0800
+
+    [8250R][BSP.Kernel.Stability][2/4][BugId:无][无风险][无依赖][自然集成]{添加uboot_feature}
+    
+    分析：{uboot_feature}
+    方案：{uboot_feature}
+    风险及影响[快/稳/省/功能]：{功能}
+    测试建议：{老化测试}
+    跨组依赖(提交链接)：{无}
+    移植适用范围：{无}
+    
+    Change-Id: I154fcfc03915fd4f650e3defa302d34f8c358c9a
+
+commit 3322e50d7c1a07927973d0ea88c85597e772e234
+Author: liwei2 <liwei2@oppo.com>
+Date:   Fri Mar 27 14:22:57 2020 +0800
+
+    [All][CN.WiFi.Network.internet][1/1][BUGID:NA][无风险][无依赖][自然集成]{给内核添加宏定义时需要修改2个文件，OplusKernelEnvConfig.mk 和 nativefeatures.mk，具体参见 OPLUS_FEATURE_TEST}
+    
+    分析：{内核编译宏添加方法}
+    方案：{Android R}
+    风险及影响[快/稳/省/功能]：{无风险}
+    测试建议：{无}
+    跨组依赖(提交链接)：{无}
+    移植适用范围：{ALL}
+    
+    Change-Id: I85cdabccb0575e67b4ea02b25ee24ae70c0bf479
+
+commit e4eb79fa5a60e11ece8fa81cd480567d01f6e6a0
+Author: liwei2 <liwei2@oppo.com>
+Date:   Thu Mar 26 18:25:53 2020 +0800
+
+    [All][CN.WiFi.Network.internet][1/1][BUGID:1357567][无风险][无依赖][自然集成]{代码移植:解决手机连接异常AP，游戏掉线问题}
+    
+    分析：{TP-link 886N，TP-link WR740N , 迅捷FWR310等路由器在概率出现，在它的arp 到期之后，不主动发送ARP，直接丢弃数据包}
+    方案：{手机端在不使用TCP数据包的时间戳去更新ARP的时间戳。让手机端在ARP的老化时间到期后，发送ARP}
+    风险及影响[快/稳/省/功能]：{ARP，无风险}
+    测试建议：{1.连接TP-link 886N，TP-link WR740N , 迅捷FWR310 等路由器测试梦幻诛仙是否存在掉线现象}
+    跨组依赖(提交链接)：{无 }
+    移植适用范围：{All}
+    
+    Change-Id: I98a532dd25d604ef5770c6f1c5e6e9d9c6209f39
+
+commit 1f931cf51484c86ed5bc47e7e7e97f10f7203262
+Author: tianwen <tianwen@oppo.com>
+Date:   Mon Mar 23 23:27:26 2020 +0800
+
+    [All][BSP.Power.Basic][6/6][BugID:无][无风险][无依赖][自然集成]{移植cdt和启动模式}
+    
+    分析：{无}
+    方案：{无}
+    风险及影响[快/稳/省/功能]：{无}
+    测试建议：{手机能刷机/开机}
+    跨组依赖(提交链接)：{无}
+    移植适用范围：{无}
+    
+    Change-Id: Ic9ca6f87f89cfc95d632f95f4c1bf2aeffcd3586
+
+commit 5c35320e813fc5edbb15d768a3d6340862756e26
+Author: sijiaquan <sijiaquan@oppo.com>
+Date:   Tue Mar 17 22:05:46 2020 +0800
+
+    [ALL][AD.SELinux][3/5][BugId:0][无风险][有依赖][自然集成]{8250R SELinux移植}
+    
+    分析：{8250R SELinux移植}
+    方案：{8250R SELinux移植}
+    风险及影响[快/稳/省/功能]：{无}
+    测试建议：{可正常开机}
+    跨组依赖(提交链接)：{
+    http://gerrit.scm.adc.com:8080/#/c/3351165/
+    http://gerrit.scm.adc.com:8080/#/c/3351321/
+    http://gerrit.scm.adc.com:8080/#/c/3351345/
+    http://gerrit.scm.adc.com:8080/#/c/3351351/
+    http://gerrit.scm.adc.com:8080/#/c/3400839/
+    }
+    移植适用范围：{8250R}
+    
+    Change-Id: Ia17dd5d67bb65db4e09ebc136815c7532a3fcdc5
+
+commit 6530985c7c4e221944e39d0d42d821a573a56c24
+Merge: 3ddd5d1 0ee915a
+Author: pswbuild <pswbuild@oppo.com>
+Date:   Sun Mar 22 11:15:16 2020 +0800
+
+    Merge tag 'AU_LINUX_ANDROID_LA.UM.9.12.R1.10.00.00.597.032_r00011.2' into psw/feature_master/upgrade/r00011.2
+    
+    Upload the codebase at 20200318
+
+commit 3ddd5d1e56335f7cfd3e78085a6334775076ae2b
+Author: qianxu <qianxu@oppo.com>
+Date:   Thu Mar 19 16:49:58 2020 +0800
+
+    [SM8250R][MM.Display.LCD.Stability][2/2][BugId:无][无风险][无依赖][自然集成]{显示驱动移植}
+    
+    分析：{显示驱动移植}
+    方案：{显示驱动移植}
+    风险及影响[快/稳/省/功能]：{功能}
+    测试建议：{编译正常，显示正常}
+    跨组依赖(提交链接)：{无}
+    移植适用范围：{无}
+    
+    Change-Id: I74ba3edfde5d89a5ed808b02ee9f943db410fd61
+
+commit b5288167c5e4c0234d06652ecf978f3484135af0
+Author: robin.ren <robin.ren@oppo.com>
+Date:   Thu Mar 19 20:59:22 2020 +0800
+
+    [SM8250_R_MASTER][Tech.bsp.charger][1/1][BugId:0][无风险][无依赖][自然集成]{提交8250 android R charger 驱动，及相关依赖文件}
+    
+    分析：{无风险}
+    方案：{无风险}
+    风险及影响[快/稳/省/功能]：{无}
+    测试建议：{充电功能正常}
+    跨组依赖(提交链接)：{ 无 }
+    移植适用范围：{无}
+
+commit 8576bcbcd603cf9779222cf2f0f809ce86bb5ee9
+Author: sunliang <sunliang@oppo.com>
+Date:   Wed Mar 18 20:06:12 2020 +0800
+
+    [8250R][TECH.SysTech][3/4][BugId:无][无风险][无依赖][自然集成]{添加native feature方案编译框架}
+    
+    分析：{略}
+    方案：{搭建kernel使用native feature变量的框架}
+    风险及影响[快/稳/省/功能]：{无}
+    测试建议：{无}
+    跨组依赖(提交链接)：{
+    http://gerrit.scm.adc.com:8080/#/c/3363987
+    http://gerrit.scm.adc.com:8080/#/c/3364011/
+    http://gerrit.scm.adc.com:8080/#/c/3364233/
+    http://gerrit.scm.adc.com:8080/#/c/3364317/
+    }
+    移植适用范围：{AndroidR}
+    
+    Change-Id: If41e53115615c034147c6ac03dc2c4967c47a46f
+    Signed-off-by: sunliang <sunliang@oppo.com>
+
+commit 93add53177d8c4361eab17313c378afae092b7f5
+Author: 田 文 <tianwen@oppo.com>
+Date:   Thu Mar 12 22:08:59 2020 +0800
+
+    Revert "[8250R][PSW.BSP.Memory][1/1][BugId:N/A][无风险][无依赖][自然集成]{跳过子系统奔溃导致panic}"
+    
+    This reverts commit 92fd28241e93389ec230341c2d1049501bfd2c47.
+    
+    Change-Id: I7e27ce6e99cf05ce02cae061a913a2a329ef2b89
+
+commit 2c693b7387630621de2acc4871947b05f663d5b6
+Author: lvkai1 <lvkai1@oppo.com>
+Date:   Thu Mar 5 10:07:56 2020 +0800
+
+    [19065][MM.AudioDriver.Codec][1/2][BugId:0][无风险][无依赖][自然集成]{源提交：fsa4480 bringup}
+    
+    分析：{增加det pin,基本功能实现}
+    方案：{增加det pin,基本功能实现}
+    风险及影响[快/稳/省/功能]：{功能}
+    测试建议：{无}
+    跨组依赖(提交链接)：{ 无 }
+    移植适用范围：{无}
+    
+    Change-Id: Ife348a32f0abb2cc714a2d07426e173d23dc9a2d
+
+commit 97ffe3d8086ab2eedccee29bfd9b2aa8987b0274
+Author: lisheng1 <lisheng1@oppo.com>
+Date:   Tue Mar 10 10:38:00 2020 +0800
+
+    [19065][MM.Display.LCD.Stability][2/5][BugId:无][无风险][无依赖][自然集成]{移植显示驱动}
+    
+    分析：{移植显示驱动}
+    方案：{移植显示驱动}
+    风险及影响[快/稳/省/功能]：{功能}
+    测试建议：{编译正常，基本显示正常}
+    跨组依赖(提交链接)：{无}
+    移植适用范围：{无}
+    
+    Change-Id: Ic19c7f6e4fc0062b7ceaa23f4278553574aa59c0
+
+commit b6764453932a346ad4844e74dd49c86481efe9fb
+Author: yaorenbing <yaorenbing@oppo.com>
+Date:   Tue Mar 10 12:04:31 2020 +0800
+
+    [8250_R][BSP.Bootloader.Bootflow][1/2][BugId:无][无风险][无依赖][自然集成]{移植TP驱动代码,kernel部分}
+    
+    分析：{新项目移植}
+    方案：{无}
+    风险及影响[快/稳/省/功能]：{无}
+    测试建议：{无}
+    跨组依赖(提交链接)：{无}
+    移植适用范围：{无}
+    
+    Change-Id: Ide98353060c1a63e1e461969a101a427ddfe2426
+
+commit c997eb99e1d0a9f6fa2bc22c1709eee9a7137c58
+Author: tianwen <tianwen@oppo.com>
+Date:   Tue Mar 10 13:27:56 2020 +0800
+
+    [8250R][PSW.BSP.Memory][1/1][BugId:N/A][无风险][无依赖][自然集成]{移植按键驱动}
+    
+    分析：{移植初版音量按键，电源按键驱动}
+    方案：{移植初版音量按键，电源按键驱动}
+    风险及影响[快/稳/省/功能]：{快/稳}
+    测试建议：{按键可用}
+    跨组依赖(提交链接)：{无}
+    移植适用范围：{无}
+    
+    Change-Id: I2dd0f6232e386aee2256bdbfbb4310042bb56fa0
+
+commit 0ee915a9087303d74c0278cad1f9ebb5b08d28ce
+Merge: 44ef422 52c9eb4
+Author: Linux Build Service Account <lnxbuild@localhost>
+Date:   Mon Mar 9 12:39:15 2020 -0700
+
+    Merge 52c9eb469d73fda965f3af154dbb22793c51f77e on remote branch
+    
+    Change-Id: I913d7a48007eaf7e08fdab9c43f867bf627a4935
+
+commit 92fd28241e93389ec230341c2d1049501bfd2c47
+Author: tianwen <tianwen@oppo.com>
+Date:   Fri Mar 6 19:27:22 2020 +0800
+
+    [8250R][PSW.BSP.Memory][1/1][BugId:N/A][无风险][无依赖][自然集成]{跳过子系统奔溃导致panic}
+    
+    分析：{}
+    方案：{}
+    风险及影响[快/稳/省/功能]：{快/稳}
+    测试建议：{}
+    跨组依赖(提交链接)：{无}
+    移植适用范围：{}
+    
+    Change-Id: I029d8bc1376e89ceb0bf361e403fc5fa2d16f9dd
+
+commit 44ef4226b1bd82d7a6daf69bb6a25532aa7c5ab9
+Merge: a2dc33d cfab229
+Author: Linux Build Service Account <lnxbuild@localhost>
+Date:   Mon Mar 2 08:20:11 2020 -0800
+
+    Merge cfab229348515095e1270f801fb85b3f9a9d5ca6 on remote branch
+    
+    Change-Id: Iaf9aba4f0a6b97fb133c09625c4eb9b1f86e0213
+
+commit 52c9eb469d73fda965f3af154dbb22793c51f77e
+Merge: 8775a08 2c7f8ef
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Mon Feb 24 04:21:11 2020 -0800
+
+    Merge "arm64: defconfig: Enable new touchscreen for lito device"
+
+commit 8775a08c6fcd3bb669c8b8edf9cfa7e2e0a10759
+Merge: 32ed91a cc166e7
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Mon Feb 24 04:21:11 2020 -0800
+
+    Merge "defconfig: msm: Disable KPROBES for Bengal perf"
+
+commit 32ed91a9d478d2dbea3c3987bd4a045f1e07be12
+Merge: f9720ff 24ed3c0
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Mon Feb 24 04:21:10 2020 -0800
+
+    Merge "soc: qcom: rpmh: Add completion status to rpmh debug information"
+
+commit f9720ff2f7ed79852dba5c8d1afefa46b2d8a0e2
+Merge: f40f8c2 bb93c43
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Mon Feb 24 04:21:10 2020 -0800
+
+    Merge "usb: gadget: Avoid NULL pointer dereference during OS descriptors handling"
+
+commit f40f8c28c0ec0c450232908a2518d21f2cab29a4
+Merge: 8c36e8f ea92a17
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Mon Feb 24 04:21:10 2020 -0800
+
+    Merge "leds: qti-flash: Do not define "trigger_to_lcdev" function"
+
+commit ea92a1796b9e5911f0c16b2d543f9eb783e1fab1
+Author: Kiran Gunda <kgunda@codeaurora.org>
+Date:   Mon Feb 24 12:54:10 2020 +0530
+
+    leds: qti-flash: Do not define "trigger_to_lcdev" function
+    
+    Remove "trigger_to_lcdev" function definition from "leds-qti-flash"
+    driver file as the same is present in "leds.h" file and leads to a
+    compilation error.
+    
+    Change-Id: Idea49767911f3a57b72bd1560d9ef485d16de25f
+    Signed-off-by: Kiran Gunda <kgunda@codeaurora.org>
+
+commit 24ed3c0f5d88fe6b997461e923ca607a5b88634d
+Author: Maulik Shah <mkshah@codeaurora.org>
+Date:   Wed Feb 12 14:49:11 2020 +0530
+
+    soc: qcom: rpmh: Add completion status to rpmh debug information
+    
+    Linux kernel lockup case can be either due to RSC interrupt
+    pending at GIC unable to service or due to completion did not
+    get a chance to run and finish.
+    
+    Currently rpmh debug only prints pending IRQ status at GIC.
+    Add completion status as well to rpmh debug information.
+    
+    Change-Id: Iaee639f744be19c2cffb701547623c19bdabfb30
+    Signed-off-by: Maulik Shah <mkshah@codeaurora.org>
+
+commit 8c36e8ffdae4f5991160e97ecd2a78fa1ad4e706
+Merge: 02b5650 aef86b2
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Sun Feb 23 19:51:09 2020 -0800
+
+    Merge "devfreq: add support to handle device suspend state"
+
+commit 02b565080280fe99db62676080d6e9d838f2c010
+Merge: 870a876 fa8c8ba
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Sun Feb 23 16:42:00 2020 -0800
+
+    Merge "defconfig: bengal: Add arch support for Scuba 32bit"
+
+commit 870a8764f42f8c963c83aaeae99c91be00b1f491
+Merge: 1c72d00 0b209e3
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Sun Feb 23 07:38:12 2020 -0800
+
+    Merge "power: qpnp-fg-gen4: Fix the condition for capacity-learning-update"
+
+commit 1c72d0088492d0d52a267a01dfabf275d8cffb3d
+Merge: e352978 fbd678a
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Sat Feb 22 21:20:45 2020 -0800
+
+    Merge "power: smb1355-charger: Update the WD BITE timeout to 8secs"
+
+commit e35297898f721871bae7a5164bf2bc4b7948e73e
+Merge: fbdf186 ae9d89b
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Sat Feb 22 21:20:44 2020 -0800
+
+    Merge "leds: qti-flash: Add support for qti_flash_led_prepare()"
+
+commit fbdf18669e0fe3aea23b2643d675f1fbabbb0a8d
+Merge: 9b19d47 c54188e
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Sat Feb 22 10:30:10 2020 -0800
+
+    Merge "mmc: sdhci-msm: Add support to vote for vdd io parent regulator"
+
+commit 9b19d47f91eb5c354a148c49ad1ebfc0923efc81
+Merge: bff4a6d 3b2b7d4
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Sat Feb 22 03:36:08 2020 -0800
+
+    Merge "mhi: core: Add support to create uncached event ring"
+
+commit bff4a6d280b22b3bc1a6cb7ca2d527cb23d4a860
+Merge: ad84b38 41b64e8
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Sat Feb 22 03:36:08 2020 -0800
+
+    Merge "defconfig: Enable QTI_XR_SMRTVWR_MISC for Kona target"
+
+commit ad84b38baacf34c1c23bf9330863314b03c08b2c
+Merge: 6a0ab40 c6aeb08
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Sat Feb 22 03:36:07 2020 -0800
+
+    Merge "sched: use rq_clock if WALT is not enabled"
+
+commit c54188e5da436d4ecbf71ff19ea71951d0dc2667
+Author: Ram Prakash Gupta <rampraka@codeaurora.org>
+Date:   Thu Feb 6 17:38:19 2020 +0530
+
+    mmc: sdhci-msm: Add support to vote for vdd io parent regulator
+    
+    As per vdd io parent regulator design, in active use cases
+    L7A needs to be on when vdd io regulator is operating at
+    2.96V, and has to be off when io regulator is operating at
+    1.8V.
+    
+    To implement above add support to vote for vdd io parent
+    regulator.
+    
+    Change-Id: I47f73a0d6733d96ec9ed41dd2522c85646a65d18
+    Signed-off-by: Ram Prakash Gupta <rampraka@codeaurora.org>
+
+commit 41b64e83b884c42c3772688cc21576ba01b7b866
+Author: Rajesh Bharathwaj <rajeshbharathwaj@codeaurora.org>
+Date:   Tue Feb 18 17:23:24 2020 -0800
+
+    defconfig: Enable QTI_XR_SMRTVWR_MISC for Kona target
+    
+    Enable XR misc driver on Kona target. XR Kona Reference devices
+    need to enable regulators and gpios for XR hardware to be enabled.
+    This driver is used to accomplish that.
+    
+    Change-Id: Ic523ffdf1593ab564452e3b78bf1ee7d7b32eb23
+    Signed-off-by: Rajesh Bharathwaj <rajeshbharathwaj@codeaurora.org>
+
+commit 1f0eb21731ab222728abe4ff46166f0775258e6f
+Author: Rajesh Bharathwaj <rajeshbharathwaj@codeaurora.org>
+Date:   Thu Feb 6 15:42:50 2020 -0800
+
+    qxr-stdalonevwr: changes for standalone XR reference device
+    
+    misc changes such as enabling regulators, gpio enabling for
+    XR Standalone reference device platform.
+    
+    Change-Id: I2ceb8b155a8e91bd5233822744fe788f1412978f
+    Signed-off-by: Rajesh Bharathwaj <rajeshbharathwaj@codeaurora.org>
+
+commit 6a0ab4082beb6e83dc402e4d32063e25cf2192bc
+Merge: a5a732a 71cf4ce
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Fri Feb 21 05:04:56 2020 -0800
+
+    Merge "sched: walt: move walt_stats member in cfs_rq under CFS_BANDWIDTH"
+
+commit a5a732ae454a31aee00fe554147b213087bb3844
+Merge: edfc38f 3968cc6
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Fri Feb 21 05:04:55 2020 -0800
+
+    Merge "usb: gadget: f_mtp: Failing receive_file_work if state is OFFLINE"
+
+commit edfc38fc715c11b345e483d7701d26d669d78a2d
+Merge: a23f93e 0d08e69
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Fri Feb 21 05:04:55 2020 -0800
+
+    Merge "power: qpnp-fg-gen4: Fix maintenance SOC reporting logic"
+
+commit a23f93ea7294921db0c41596e03c04f951f785b2
+Merge: cd96342 a2fb410
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Fri Feb 21 05:04:54 2020 -0800
+
+    Merge "power: smb5-lib: Register typec partner only when partner is unregistered"
+
+commit cd96342f1fbe944cda308f350967ce3479f431b8
+Merge: df74108 86d0cd3
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Fri Feb 21 05:04:54 2020 -0800
+
+    Merge "soc: qcom: spss_utils: protect from event signaled twice"
+
+commit df741082dcd648e102fe559eb7231dbd9376b8cd
+Merge: 80fded8 6a6cc98
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Fri Feb 21 05:04:54 2020 -0800
+
+    Merge "leds: qti-flash: Fix updating flags when disabling flash/torch device"
+
+commit 0b209e37cb5975e6c911f542a830584942beb119
+Author: Kiran Gunda <kgunda@codeaurora.org>
+Date:   Wed Feb 19 17:52:30 2020 +0530
+
+    power: qpnp-fg-gen4: Fix the condition for capacity-learning-update
+    
+    Weighted capacity learning relies on input status to complete the
+    capacity learning event. The existing logic only relies on
+    charging_status change to send a cap-learning update, which in a
+    corner condition may not send an update when input changes status.
+    Fix this by always sending a capacity learning update irrespective
+    of the change in input/charge status.
+    
+    Change-Id: Idfed395e1acad2b3b5c7b19ef137063d186af40f
+    Signed-off-by: Kiran Gunda <kgunda@codeaurora.org>
+
+commit fa8c8babcee1cfe8ab278abf869923478ba2a099
+Author: lijuang <lijuang@codeaurora.org>
+Date:   Fri Feb 14 13:20:08 2020 +0800
+
+    defconfig: bengal: Add arch support for Scuba 32bit
+    
+    Enable scuba defconfig for scuba 32bit platform support.
+    
+    Change-Id: I9600a60c1dec40ff9cef9f944a157d4152bef3f5
+    Signed-off-by: lijuang <lijuang@codeaurora.org>
+
+commit 44622a26274f6725d17ec885633ff3b287750460
+Author: lijuang <lijuang@codeaurora.org>
+Date:   Thu Feb 13 19:04:04 2020 +0800
+
+    ARM: msm: Add board config support for 32 bit scuba
+    
+    This change add initial board config support to enable build
+    32 bit kernel for scuba.
+    
+    Change-Id: Iaf805470a39c905de9a41af3eec913a9727a5226
+    Signed-off-by: lijuang <lijuang@codeaurora.org>
+
+commit c6aeb08fe2def7b674b3fc8ccfebe41e2cfb91ba
+Author: Santosh Mardi <gsantosh@codeaurora.org>
+Date:   Thu Feb 20 16:37:32 2020 +0530
+
+    sched: use rq_clock if WALT is not enabled
+    
+    Use rq_clock to send timestamp to util update handler
+    if WALT is not enabled in the system.
+    
+    Change-Id: I1e367c506a2fc286a4dfbac9d1f6cdd897d31f2d
+    Signed-off-by: Santosh Mardi <gsantosh@codeaurora.org>
+
+commit 71cf4ceb6bad23587670167fc7b70f3f8828e3f6
+Author: Pavankumar Kondeti <pkondeti@codeaurora.org>
+Date:   Thu Feb 20 09:00:19 2020 +0530
+
+    sched: walt: move walt_stats member in cfs_rq under CFS_BANDWIDTH
+    
+    The walt_stats member (walt_sched_stats structure) defined in cfs_rq
+    is only needed when CFS_BANDWIDTH feature is enabled. So add this
+    member under CFS_BANDWIDTH feature in cfs_rq structure.
+    
+    Change-Id: I9ddfb00da3377a66a18522eaecdb8b0f76517e8e
+    Signed-off-by: Pavankumar Kondeti <pkondeti@codeaurora.org>
+
+commit 2c7f8ef10fd477d6d920bf1afb0246f43c1ecce5
+Author: Fei Mao <feim1@codeaurora.org>
+Date:   Thu Feb 20 17:56:17 2020 +0800
+
+    arm64: defconfig: Enable new touchscreen for lito device
+    
+    Enable new Focaltech touchscreen driver for lito device.
+    
+    Change-Id: Iec94a6e054867f2ca460c1dd712a5177bd7ca9b1
+    Signed-off-by: Fei Mao <feim1@codeaurora.org>
+
+commit e8b5b1acda92de10b1cadc685980535d39a71683
+Author: Fei Mao <feim1@codeaurora.org>
+Date:   Thu Feb 20 17:49:13 2020 +0800
+
+    input: touchscreen: Enable new Focaltech touch driver
+    
+    Enable this new Focaltech touch driver for internal devices.
+    
+    Change-Id: I7a2e5f70582f8b886799b77f4d261034d3fc955a
+    Signed-off-by: Fei Mao <feim1@codeaurora.org>
+
+commit 8bcb96ee0445dcdd1daf79c5d303f31f1d10c279
+Author: lijuang <lijuang@codeaurora.org>
+Date:   Thu Feb 13 19:02:05 2020 +0800
+
+    ARM: qcom: Add ARCH_SCUBA to support 32bit
+    
+    Add ARCH_SCUBA to Kconfig to support 32bit Scuba.
+    
+    Change-Id: I3760619a13fc9b41343f46bed1aba54081ef4603
+    Signed-off-by: lijuang <lijuang@codeaurora.org>
+
+commit 86d0cd334faff59a721ebfc0fcd55e27d1dfaf4e
+Author: Amir Samuelov <amirs@codeaurora.org>
+Date:   Thu Feb 20 09:29:41 2020 +0200
+
+    soc: qcom: spss_utils: protect from event signaled twice
+    
+    avoid event signaled twice.
+    add ioctl to check if event was signaled.
+    
+    Change-Id: Ie75b9db86f2badddc08d65eee30ecd6a15795256
+    Signed-off-by: Amir Samuelov <amirs@codeaurora.org>
+
+commit a2fb410057bd7b6f68f79ebe8eb368397631a222
+Author: Kavya Nunna <knunna@codeaurora.org>
+Date:   Fri Feb 7 18:21:01 2020 +0530
+
+    power: smb5-lib: Register typec partner only when partner is unregistered
+    
+    Fix an issue where the type-C partner tries to register
+    without a unregister.
+    
+    While at it, PMI632 does not support TRY.SNK, do not enable it.
+    
+    Change-Id: I452f73d0841d160b76645981227a077564e167e1
+    Signed-off-by: Kavya Nunna <knunna@codeaurora.org>
+
+commit aef86b2ecc0ac83fc14843420f4ce07fd50a3768
+Author: Santosh Mardi <gsantosh@codeaurora.org>
+Date:   Mon Jan 27 16:33:19 2020 +0530
+
+    devfreq: add support to handle device suspend state
+    
+    bwmon governor does not differentiate with device
+    suspend / resume state of the device, there will
+    be a requirement with some bw monitor device,
+    to not access it's register space when device is
+    in suspend state.
+    
+    Avoid accessing bw monitor register space when
+    the device is in suspend state, add device suspend
+    state intelligence in bwmon governor.
+    
+    Change-Id: Iba6e0475809b663fbd4c3d56fc086bf4c93c164d
+    Signed-off-by: Santosh Mardi <gsantosh@codeaurora.org>
+
+commit b451f2e99770975b59ded762b983e99a2a627158
+Author: Santosh Mardi <gsantosh@codeaurora.org>
+Date:   Thu Feb 13 18:09:23 2020 +0530
+
+    devfreq: allow switching governor when device suspended
+    
+    When device is suspended, switching governor is not
+    allowed, governor code is updated to handle this scenario.
+    
+    Allow governor switch when device is in suspended state.
+    
+    Change-Id: I03609ee9f3cef3ddc0d8a640e07d20e2003cece0
+    Signed-off-by: Santosh Mardi <gsantosh@codeaurora.org>
+
+commit 00fbcb682a81e7d7192dd4391b2de440280cf4be
+Author: Santosh Mardi <gsantosh@codeaurora.org>
+Date:   Fri Feb 14 12:00:29 2020 +0530
+
+    Revert "devfreq: Do not allow tunable updates when device is suspended"
+    
+    This reverts commit efff55e21322a4e261be8ad9527f680889e3df76.
+    
+    When device is suspended setting tunnable is not allowed,
+    now governor changed to handle the suspend state of device.
+    
+    Allow configuring tunable when device is in suspend state,
+    revert changing the code which is not allowing to set tunables.
+    
+    Change-Id: I32638e4e20df2b54dda00089965d6aca0af1a926
+    Signed-off-by: Santosh Mardi <gsantosh@codeaurora.org>
+
+commit bb93c4395dc616a60fc48dc368aa17c70d3d1d88
+Author: Chandana Kishori Chiluveru <cchiluve@codeaurora.org>
+Date:   Mon Sep 10 19:27:36 2018 +0530
+
+    usb: gadget: Avoid NULL pointer dereference during OS descriptors handling
+    
+    With multi-config compositions some hosts can bind the configuration
+    incorrectly and sending os descriptor request on invalid interface.
+    This could cause accessing NULL pointer and results in panic.
+    
+    Fix this by bailing out from the OS descriptor setup request handling
+    if the interface is NULL.
+    
+    Change-Id: I65f01b876a46b907eb883e48878fc081860b0753
+    Signed-off-by: Chandana Kishori Chiluveru <cchiluve@codeaurora.org>
+
+commit 80fded8cc179239fa6600c85cfa42fa9cb5b2fa4
+Merge: f1b3eb0 106a89ee
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Wed Feb 19 14:47:20 2020 -0800
+
+    Merge "sched: walt: Improve the scheduler"
+
+commit f1b3eb07a247cb9d2da13302655032bd8b66b214
+Merge: 70cc234 8606f53
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Wed Feb 19 14:47:20 2020 -0800
+
+    Merge "msm: npu: Check for npu bandwidth node before assignment"
+
+commit 70cc234a8c9a5cdab913ccf974a137aec60f5ba9
+Merge: cbda528 9d32482
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Wed Feb 19 14:47:19 2020 -0800
+
+    Merge "msm: pcie: lower event callback print prority"
+
+commit cbda5280840f8bc9436d2eac431f1927d7706161
+Merge: 5258ffa 6acfe56
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Wed Feb 19 10:52:51 2020 -0800
+
+    Merge "mhi: core: Prevent MHI reg read upon endpoint crash"
+
+commit 5258ffaa471b6bfc95ba60e1e2f550073ecc40f2
+Merge: a1b447b e83aab9
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Wed Feb 19 10:52:51 2020 -0800
+
+    Merge "msm: adsprpc: Adding inrout buffer cache maintenance support"
+
+commit a1b447b63f3207a68f1cd760bd4e229ddf79bf30
+Merge: 7baa4c4 93064ed
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Wed Feb 19 10:52:51 2020 -0800
+
+    Merge "wil6210: update to proper EDMG channel"
+
+commit fbd678ad02a26a435aff1594ba07675c541a67af
+Author: Anirudh Ghayal <aghayal@codeaurora.org>
+Date:   Wed Feb 19 19:22:41 2020 +0530
+
+    power: smb1355-charger: Update the WD BITE timeout to 8secs
+    
+    The default timeout of 1sec may not be enough time for SW
+    to PET the watchdog (after a bark). Update this to 8secs.
+    
+    Change-Id: I65882067783100e7b9ecdc1e697b93948945b4eb
+    Signed-off-by: Anirudh Ghayal <aghayal@codeaurora.org>
+
+commit ae9d89bd4d13c4a44fc86dd34ffa3d6cf53f719c
+Author: Shyam Kumar Thella <sthella@codeaurora.org>
+Date:   Mon Feb 10 22:29:50 2020 +0530
+
+    leds: qti-flash: Add support for qti_flash_led_prepare()
+    
+    qti_flash_led_prepare() API is used by flash clients (E.g. Camera) to
+    query maximum current available for flash. Add support for this API
+    which initially returns maximum current that is supported for flash
+    LED module (2000 mA). Also, add a sysfs parameter under switch devices
+    to show max available flash current.
+    
+    Change-Id: I3aed009a0d7e0f34a6d05a45af34fcd0f37a6fe7
+    Signed-off-by: Shyam Kumar Thella <sthella@codeaurora.org>
+
+commit f9f0277237c74ced8b947efc982213a8db4eedc8
+Author: Shyam Kumar Thella <sthella@codeaurora.org>
+Date:   Fri Feb 7 16:26:00 2020 +0530
+
+    leds: qti-flash: Add individual APIs to enable and disable switch
+    
+    Currently qti_flash_led_switch_brightness_set() is used to enable or
+    disable switch. Split it into separate APIs to enable and disable
+    switch. This will make it easier to control switches which is required
+    for implementing slow-sync flash feature.
+    
+    Change-Id: I668ab872d1d646f97ed8fbfba4dfca6b4db5bc70
+    Signed-off-by: Shyam Kumar Thella <sthella@codeaurora.org>
+
+commit 81ff65f7b1572844de0992db80ade97857f9997c
+Author: Kiran Gunda <kgunda@codeaurora.org>
+Date:   Thu Feb 13 20:10:06 2020 +0530
+
+    leds: qti-flash: Add new compatible string for pm2250 flash
+    
+    PM2250 supports a single flash channel. Add "qcom,pm2250-flash-led"
+    compatible string to enable the support for PM2250 flash/torch.
+    
+    Change-Id: I125824b5e85cf0bfed4a1c3d855c45210d03826d
+    Signed-off-by: Kiran Gunda <kgunda@codeaurora.org>
+
+commit 7baa4c4658ee074b763ed8198833c01814db68aa
+Merge: 550cbb9 d38deb2
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Wed Feb 19 03:27:16 2020 -0800
+
+    Merge "wil6210: support sniffer in EDMA mode"
+
+commit 550cbb9fcfcda324c1a016427ce21908911cb8b9
+Merge: 01852b9 bff7780
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Wed Feb 19 03:27:15 2020 -0800
+
+    Merge "sched: walt: Improve the scheduler"
+
+commit 106a89ee7c92589094e4072ec09ff6042d7599c5
+Author: Pavankumar Kondeti <pkondeti@codeaurora.org>
+Date:   Wed Feb 19 14:24:15 2020 +0530
+
+    sched: walt: Improve the scheduler
+    
+    This change is for general scheduler improvements.
+    
+    Change-Id: I49218b594f77ab416c317e952865d889fd9a2058
+    Signed-off-by: Pavankumar Kondeti <pkondeti@codeaurora.org>
+
+commit e83aab9a2648ec1f09b58b8f83b92ab9c334792f
+Author: Mohammed Nayeem Ur Rahman <mohara@codeaurora.org>
+Date:   Tue Feb 18 23:48:15 2020 +0530
+
+    msm: adsprpc: Adding inrout buffer cache maintenance support
+    
+    Adding inrout buffer CMO support with new cache flush logic
+    involving offsets and overlaps.
+    
+    Acked-by: Deepika Singh <dsi@qti.qualcomm.com>
+    Change-Id: I1e5ac1e3c52c80d40b6c3a0c9207e7a73d06bf65
+    Signed-off-by: Mohammed Nayeem Ur Rahman <mohara@codeaurora.org>
+
+commit 93064ed5f54b6b1ddc9cf2d79f0b917f4d24addb
+Author: Alexei Avshalom Lazar <ailizaro@codeaurora.org>
+Date:   Sun Dec 1 11:09:47 2019 +0200
+
+    wil6210: update to proper EDMG channel
+    
+    On some cases there is wrong reference to the EDMG channel.
+    Update to proper EDMG channel.
+    
+    Change-Id: Iada977daa5f0ae32790f1fe877db57e964d32434
+    Signed-off-by: Alexei Avshalom Lazar <ailizaro@codeaurora.org>
+
+commit 01852b94625f45f9308db3fec1f3433694f41754
+Merge: 8afc5ab 9916105
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Tue Feb 18 23:54:47 2020 -0800
+
+    Merge "defconfig: msm: Enable LSE atomics for Kona"
+
+commit 8afc5abd54daadb11fc43552dd4216d2afe64fbc
+Merge: db92aeb 95c6c48
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Tue Feb 18 23:54:47 2020 -0800
+
+    Merge "cnss2: Replace "%p" with "%pK""
+
+commit db92aebf0e24de88f88ecbf220e625aabee030cd
+Merge: eef8c6e 06e32b2
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Tue Feb 18 23:54:47 2020 -0800
+
+    Merge "dfc: Not flow control NDP packets"
+
+commit eef8c6e4e8b52411a7cf98ba0adc3fdc3e9c6e11
+Merge: 7b35b77 b0c0d9c
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Tue Feb 18 23:54:46 2020 -0800
+
+    Merge "defconfig: Add BAM configuration to LAGOON"
+
+commit 7b35b77918f633bbc632a6bf5a82e738fa3205ad
+Merge: c3768d3 1014a13
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Tue Feb 18 23:54:46 2020 -0800
+
+    Merge "clk: qcom: gcc-bengal: Update the VCO table for the PLL's"
+
+commit c3768d3385c1f958cdc1a4e97037b1fd36a5fe55
+Merge: f9b1bd4 c256190
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Tue Feb 18 23:54:46 2020 -0800
+
+    Merge "defconfig: msm: Update misc configs for Bengal 32bit"
+
+commit f9b1bd449de43ca186643144849808fdb8308afe
+Merge: b53bd50 45967f3
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Tue Feb 18 23:54:46 2020 -0800
+
+    Merge "defconfig: msm: Enable USB ACM and USB SERIAL CP210X for qrb5165"
+
+commit b53bd50ad53c5583ab688e8d3cfecb0e362baeff
+Merge: cfab229 137618c
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Tue Feb 18 23:54:45 2020 -0800
+
+    Merge "msm: ipa4: Add checks to prevent use-after-free errors"
+
+commit 6acfe5605e4bc507a8b7d90cc09b447e908e728b
+Author: Hemant Kumar <hemantk@codeaurora.org>
+Date:   Fri Jan 24 18:30:06 2020 -0800
+
+    mhi: core: Prevent MHI reg read upon endpoint crash
+    
+    MHI reset is triggered as part of EP shutdown. Shutdown
+    is blocked until MHI RESET bit is cleared in MHI CTRL reg.
+    There is a possibility of PCIe link going down during this
+    time. Since MHI RESET bit never gets cleared after 2 sec
+    wait_event_timeout reads the MHI CTRL reg and this results
+    into a memory abort. Fix this issue by using a boolean flag
+    as condition in wait_event_timeout. This flag is set when
+    MHI reset is triggered and cleared when reset is done.
+    
+    Change-Id: I5b1831518255a38cde5b60406b5b9e9386b5477e
+    Signed-off-by: Hemant Kumar <hemantk@codeaurora.org>
+
+commit 8606f531ee7bc7746b3c79874aea76343f645cb2
+Author: Da Hoon Pyun <dpyun@codeaurora.org>
+Date:   Tue Feb 18 16:02:01 2020 -0500
+
+    msm: npu: Check for npu bandwidth node before assignment
+    
+    This change is to ensure npu bandwidth nodes are valid before
+    assigning the variable for use.
+    
+    Change-Id: I3ba1b9f9ba236ef4a0078bdb4ea065761a0217fe
+    Signed-off-by: Da Hoon Pyun <dpyun@codeaurora.org>
+
+commit 95c6c483a8b103579e6cbf0d82710b3fa51572f5
+Author: Mahesh Kumar Kalikot Veetil <mkalikot@codeaurora.org>
+Date:   Thu Feb 6 16:49:49 2020 -0800
+
+    cnss2: Replace "%p" with "%pK"
+    
+    The format specifier %p can leak kernel addresses. Use "%pK" instead.
+    The behaviour of "%pK" depends on the 'kptr_restrict sysctl'.
+    
+    Change-Id: I65882067783100e7b9ecdc1e697b93948945b4ea
+    CRs-Fixed: 2616581
+    Signed-off-by: Mahesh Kumar Kalikot Veetil <mkalikot@codeaurora.org>
+
+commit a2dc33db9c1a688485dcb45a0a4247db146b5585
+Merge: f8879c9 6eec9af
+Author: Linux Build Service Account <lnxbuild@localhost>
+Date:   Tue Feb 18 11:53:10 2020 -0800
+
+    Merge 6eec9af592e3bd48ded6e51c360642c9316598be on remote branch
+    
+    Change-Id: I9355ee063feaf474aaae2c4aabd92727c119f0ee
+
+commit 06e32b207f73a71867aace17142d289c9114c3f7
+Author: Subash Abhinov Kasiviswanathan <subashab@codeaurora.org>
+Date:   Thu Feb 13 12:58:07 2020 -0800
+
+    dfc: Not flow control NDP packets
+    
+    Allow all NDP packets to be sent regardless of flow control state.
+    These packets are needed for address configuration even if the default
+    flow is disabled from the beginning of the call such as in 5G SA.
+    
+    Change-Id: Ia10e41c5ec8e163b9682c6b4f553f9b102020042
+    Acked-by: Weiyi Chen <weiyic@qti.qualcomm.com>
+    Signed-off-by: Subash Abhinov Kasiviswanathan <subashab@codeaurora.org>
+
+commit 3968cc61228f740bb7ab4bbdf56e446147c1cac3
+Author: Udipto Goswami <ugoswami@codeaurora.org>
+Date:   Tue Feb 18 10:20:45 2020 +0530
+
+    usb: gadget: f_mtp: Failing receive_file_work if state is OFFLINE
+    
+    If unbind and receive_file_work takes place in parallel,
+    since unbind has the mutex_lock first receive_file_work
+    must wait until it is freed. Once it gets the mutex_lock it
+    starts processing again but till then unbind would have
+    cleared the request which leads to a slab poison error.
+    
+    Fix this by check inside receive_file_work after mutex_lock
+    if the state is offline and bail out.
+    
+    Change-Id: I27c7ed3d75c46d4d360b0d3d798924b5254a0216
+    Signed-off-by: Udipto Goswami <ugoswami@codeaurora.org>
+
+commit 0d08e699cf21c7b40744f65cf47f2a8b19f6d5f1
+Author: Kiran Gunda <kgunda@codeaurora.org>
+Date:   Wed Feb 5 14:43:02 2020 +0530
+
+    power: qpnp-fg-gen4: Fix maintenance SOC reporting logic
+    
+    Some times the SOC value reported as increasing even though
+    there is no charger connected to the device. Fix it by correcting
+    maintenance SOC reporting logic.
+    
+    Change-Id: I0fb897616c72467f68b9be9a193c28a9008765ea
+    Signed-off-by: Kiran Gunda <kgunda@codeaurora.org>
+
+commit b0c0d9c9d5e6a5f05428b5b062b136f5bd57bdcc
+Author: Udipto Goswami <ugoswami@codeaurora.org>
+Date:   Fri Feb 14 15:44:05 2020 +0530
+
+    defconfig: Add BAM configuration to LAGOON
+    
+    Enable BAM2BAM configuration in LAGOON.
+    
+    Change-Id: I601078124dc54e7955976e10bf082dea3f7b250f
+    Signed-off-by: Udipto Goswami <ugoswami@codeaurora.org>
+
+commit cfab229348515095e1270f801fb85b3f9a9d5ca6
+Merge: 87a4b9e 50052f2
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Mon Feb 17 06:14:35 2020 -0800
+
+    Merge "defconfig: Remove unnecessary config for bengal 32bit"
+
+commit 87a4b9ed9a8c2ed495a30d25623ef41914351568
+Merge: 3674b0b 7e41418
+Author: qctecmdr <qctecmdr@localhost>
+Date:   Mon Feb 17 06:14:35 2020 -0800
+
+    Merge "defconfig: Enable Open-Channel SSD target support on Kona"

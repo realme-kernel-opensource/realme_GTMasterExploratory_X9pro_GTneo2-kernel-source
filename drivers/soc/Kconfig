@@ -1,0 +1,50 @@
+menu "SOC (System On Chip) specific Drivers"
+
+source "drivers/soc/actions/Kconfig"
+source "drivers/soc/amlogic/Kconfig"
+source "drivers/soc/atmel/Kconfig"
+source "drivers/soc/bcm/Kconfig"
+source "drivers/soc/fsl/Kconfig"
+source "drivers/soc/imx/Kconfig"
+source "drivers/soc/mediatek/Kconfig"
+source "drivers/soc/qcom/Kconfig"
+source "drivers/soc/renesas/Kconfig"
+source "drivers/soc/rockchip/Kconfig"
+source "drivers/soc/samsung/Kconfig"
+source "drivers/soc/sunxi/Kconfig"
+source "drivers/soc/tegra/Kconfig"
+source "drivers/soc/ti/Kconfig"
+source "drivers/soc/ux500/Kconfig"
+source "drivers/soc/versatile/Kconfig"
+source "drivers/soc/xilinx/Kconfig"
+source "drivers/soc/zte/Kconfig"
+source "drivers/soc/oplus/Kconfig"
+#ifdef OPLUS_FEATURE_IOMONITOR
+source "drivers/soc/oplus/iomonitor/Kconfig"
+#endif /*OPLUS_FEATURE_IOMONITOR*/
+#ifdef VENDOR_EDIT
+#wen.luo@BSP.Kernel.Stability 2020/03/25 add for oplus kernel system
+source "drivers/soc/oplus/system/Kconfig"
+#endif
+#ifdef OPLUS_FEATURE_HEALTHINFO
+#Jiheng.Xie@BSP.Kernel.Performance 2020/06/18 add for healthinfo
+source "drivers/soc/oplus/healthinfo/Kconfig"
+#endif /* OPLUS_FEATURE_HEALTHINFO */
+
+#ifdef OPLUS_FEATURE_POWERINFO_STANDBY
+source "drivers/soc/oplus/owakelock/Kconfig"
+#endif /* OPLUS_FEATURE_POWERINFO_STANDBY */
+
+#ifdef OPLUS_FEATURE_HOUSTON
+source "drivers/soc/oplus/houston/Kconfig"
+#endif
+
+#ifdef OPLUS_FEATURE_SENSOR_SMEM
+#qiuzuolin@BSP.Sensor.Basic 2020/07/31 add for oplus sensor smem
+source "drivers/soc/oplus/sensor/Kconfig"
+#endif /* OPLUS_FEATURE_SENSOR_SMEM */
+
+#Add for NandSwap
+source "drivers/soc/oplus/oplus_nandswap/Kconfig"
+
+endmenu

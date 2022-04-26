@@ -1,0 +1,6 @@
+#ifdef OPLUS_FEATURE_HEALTHINFO
+config OPLUS_HEALTHINFO
+bool "config healthinfo"
+help
+    define this config to init  healthinfo.
+#endif /* OPLUS_FEATURE_HEALTHINFO */
