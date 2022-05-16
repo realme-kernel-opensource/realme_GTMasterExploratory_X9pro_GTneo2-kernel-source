@@ -136,8 +136,6 @@ all.config
 # fetched Android config fragments
 kernel/configs/android-*.cfg
 
-# Tech package directories
-techpack/
 
 # ln the wakelock_profiler
 drivers/soc/oplus/owakelock
